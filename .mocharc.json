@@ -1,0 +1,8 @@
+{
+  "extension": ["js"],
+  "node-option": [
+    "experimental-vm-modules"
+  ],
+  "spec": "./test/**/*.test.js",
+  "reporter": "mochawesome"
+}
