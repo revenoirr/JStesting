@@ -4,15 +4,24 @@
   "description": "JavaScript unit testing with coverage",
   "type": "module",
   "scripts": {
-  "test": "mocha",
-  "coverage": "c8 --reporter=text --all --include=utils/*.js mocha"
-},
+    "test": "mocha",
+    "coverage": "c8 --reporter=text --all --include=utils/*.js mocha",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
+    "@eslint/js": "^9.25.1",
     "babel-jest": "^29.7.0",
     "c8": "^8.0.1",
     "chai": "^4.5.0",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "mocha": "^10.8.2",
     "mochawesome": "^7.1.3"
   }
